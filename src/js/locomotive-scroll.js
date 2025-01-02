@@ -52,8 +52,11 @@ document.addEventListener('DOMContentLoaded', () =>
 		const whyInView = isElementInViewport(whySectionElement);
 		const contactsInView = isElementInViewport(contactsSectionElement);
 
-		if (heroInView || contactsInView) navbar.classList.remove('navbar-with-button');
-		else navbar.classList.add('navbar-with-button');
+		if (window.innerWidth > 600)
+		{
+			if (heroInView || contactsInView) navbar.classList.remove('navbar-with-button');
+			else navbar.classList.add('navbar-with-button');
+		}
 
 		if (heroInView) gradientBlurTopElement.style.transform = '';
 		else gradientBlurTopElement.style.transform = 'unset';
@@ -88,18 +91,6 @@ document.addEventListener('DOMContentLoaded', () =>
 		});
 	});
 });
-
-/* function clamp(num, min, max)
-{
-	if (min > max) return clamp(num, max, min);
-	else return num < min ? min : num > max ? max : num;
-}
-
-function lerp(start, end, t)
-{
-	if (Math.abs(end - start) <= t) return end;
-	return start + (end - start) * t;
-} */
 
 function isElementInViewport(el)
 {

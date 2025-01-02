@@ -36,6 +36,7 @@
 	--blur-bg: 25px;
 	--main-border-radius: 20px;
 	--second-border-radius: 30px;
+	--main-font-size: 16px;
 }
 
 *, *::before, *::after
@@ -48,7 +49,7 @@
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	font-family: Poppins, sans-serif;
-	font-size: 16px;
+	font-size: var(--main-font-size);
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -250,14 +251,14 @@ h1, h2, h3, h4, h5, h6, p, a, .text-inner-span { white-space: pre; }
 {
 	width: fit-content;
 	height: fit-content;
-	font-size: 12px;
+	font-size: calc(var(--main-font-size) * 0.75);
 }
 
 .text-header-in-item
 {
 	width: fit-content;
 	height: fit-content;
-	font-size: 16px;
+	font-size: var(--main-font-size);
 }
 /* #endregion */
 
@@ -469,63 +470,6 @@ h1, h2, h3, h4, h5, h6, p, a, .text-inner-span { white-space: pre; }
 
 [data-noise-on-hover].button:active .noise-on-hover, [data-noise-on-hover].project-item:active .noise-on-hover { opacity: 0 !important; }
 
-/* .bg-noise
-{
-	position: absolute;
-	inset: 0;
-	background: url('../images/noise.jpg');
-	mix-blend-mode: overlay;
-	background-size: 1024px;
-	opacity: 0.25;
-}
-
-@media (max-width: 768px) { .bg-noise { display: none; } } */
-
-/* .cursor
-{
-	position: fixed;
-	width: 10px;
-	height: 10px;
-	border-radius: 100px;
-	background-color: #fff;
-	opacity: 0.75;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	pointer-events: none;
-	transition: width 0.2s, height 0.2s, opacity 0.2s;
-	z-index: 10000;
-}
-
-.cursor-click
-{
-	width: 15px;
-	height: 15px;
-	opacity: 1;
-}
-
-.cursor-hover
-{
-	opacity: 0.5;
-	mix-blend-mode: difference;
-	transition: opacity 0.2s, opacity 0.2s;
-}
-
-.cursor-glow
-{
-	position: fixed;
-	width: 40px;
-	height: 40px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 25px;
-	background: var(--clr-main-gradient);
-	filter: blur(20px);
-	opacity: 0;
-	transition: opacity 0.1s;
-	mix-blend-mode: plus-lighter;
-	z-index: 9999;
-} */
-
 html
 {
 	width: fit-content;
@@ -555,44 +499,3 @@ a
 }
 
 a:hover { cursor: pointer; }
-
-h1 { font-size: 310%; }
-h3 { font-size: 310%; }
-h5 { font-size: 220%; }
-h6 { font-size: 125%; }
-
-.btn-ripple { overflow: clip; }
-
-.btn-ripple .ripple
-{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 0;
-	height: 0;
-	border-radius: 50%;
-	background: var(--clr-white-tr-25);
-	background-position: center;
-	animation: ripple 1s;
-	opacity: 0;
-	pointer-events: none;
-}
-
-@keyframes ripple
-{
-	0%
-	{
-		opacity: 0;
-	}
-	15%
-	{
-		opacity: 1;
-	}
-	100%
-	{
-		opacity: 0;
-		width: 200%;
-		padding-bottom: 200%;
-	}
-}
