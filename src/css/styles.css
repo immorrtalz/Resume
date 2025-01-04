@@ -262,6 +262,41 @@
 .project-item:active h5, .project-item:active p { color: color-mix(in srgb, rgba(255, 255, 255, 0.75), var(--clr-accent)); }
 .project-item:active svg { fill: color-mix(in srgb, rgba(255, 255, 255, 0.75), var(--clr-accent)); transform: none; }
 
+.project-item-showcase
+{
+	position: fixed;
+	inset: 0;
+	background: color-mix(in srgb, var(--clr-dark) 25%, transparent);
+	backdrop-filter: blur(calc(var(--blur-bg) * 0.25));
+	z-index: 10;
+	opacity: 0;
+}
+
+.project-item-showcase > img
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 80vw;
+	max-height: 80vh;
+	transform: translate(-50%, -50%);
+	object-fit: contain;
+	user-select: none;
+}
+
+.project-item-showcase > svg
+{
+	position: fixed;
+	top: 5vw;
+	right: 5vw;
+	pointer-events: all;
+	opacity: 0.75;
+	transition: all 0.2s, transform 0.75s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.project-item-showcase > svg:hover { opacity: 1; transform: scale(1.25); }
+.project-item-showcase > svg:active { opacity: 0.5; transform: scale(0.75); }
+
 .experience-items
 {
 	width: fit-content;
