@@ -462,7 +462,7 @@ h1, h2, h3, h4, h5, h6, p, a, .text-inner-span { white-space: pre; }
 	inset: -2px;
 	border-radius: inherit;
 	background: url('../images/noise.jpg');
-	background-size: 512px;
+	background-size: 1024px;
 	mask-image: radial-gradient(300px 300px at center, white, transparent);
 	opacity: 0;
 	mix-blend-mode: plus-lighter;
