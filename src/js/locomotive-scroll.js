@@ -13,6 +13,72 @@ document.addEventListener('DOMContentLoaded', () =>
 
 	new ResizeObserver(() => scroll.update()).observe(document.querySelector('[data-scroll-container]'));
 
+	// FPS check
+	var now;
+	var fps = 0;
+	var before = Date.now();
+	var badPerformanceAlerts = 0;
+	var badPerformanceDialogShown = false;
+	const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || "MacIntel" === navigator.platform && navigator.maxTouchPoints > 1;
+
+	const badPerformanceDialog = document.getElementById('badPerformanceDialog');
+	const badPerformanceDialogButtons = badPerformanceDialog.querySelectorAll('.button');
+	const badPerformanceDialogContainer = badPerformanceDialog.querySelector('.dialog-container');
+
+	requestAnimationFrame(function loop()
+	{
+		now = Date.now();
+		fps = Math.round(1000 / (now - before));
+		before = now;
+
+		if (fps < 45 && !badPerformanceDialogShown) // bad perormance detected
+		{
+			badPerformanceAlerts++;
+
+			if (badPerformanceAlerts > 10)
+			{
+				badPerformanceDialogShown = true;
+
+				badPerformanceDialog.style.pointerEvents = 'all';
+				badPerformanceDialog.style.opacity = 1;
+
+				badPerformanceDialogContainer.style.pointerEvents = 'all';
+				for (var i = 0; i < badPerformanceDialogButtons.length; i++) badPerformanceDialogButtons[i].style.pointerEvents = 'all';
+
+				badPerformanceDialog.addEventListener('click', closeBadPerformanceDialog);
+				badPerformanceDialogButtons[1].addEventListener('click', closeBadPerformanceDialog);
+			
+				badPerformanceDialogContainer.addEventListener('click', (e) => e.stopPropagation());
+				for (var i = 0; i < badPerformanceDialogButtons.length; i++) badPerformanceDialogButtons[i].addEventListener('click', (e) => e.stopPropagation());
+
+				badPerformanceDialogButtons[0].addEventListener('click', (e) =>
+				{
+					if (isMobile) scroll.smartphone.smooth = false;
+					else scroll.smooth = false;
+					scroll.stop();
+					document.querySelector('html').style.overflow = 'clip scroll';
+					document.querySelector('.pages-container').classList.add('pages-container-no-transform');
+					document.querySelector('.c-scrollbar').style.display = 'none';
+
+					const notInScrollElements = document.querySelectorAll('.element-not-in-scroll');
+					for (var i = 0; i < notInScrollElements.length; i++) notInScrollElements[i].classList.add('element-in-scroll');
+
+					closeBadPerformanceDialog();
+				});
+
+				function closeBadPerformanceDialog()
+				{
+					badPerformanceDialog.style.pointerEvents = '';
+					badPerformanceDialog.style.opacity = '';
+					badPerformanceDialogContainer.style.pointerEvents = '';
+					for (var i = 0; i < badPerformanceDialogButtons.length; i++) badPerformanceDialogButtons[i].style.pointerEvents = '';
+				}
+			}
+		}
+
+		if (badPerformanceAlerts < 11) requestAnimationFrame(loop);
+	});
+
 	// OnScroll --------------------------------------------------
 
 	const heroSectionElement = document.getElementById('hero');

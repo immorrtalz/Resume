@@ -132,6 +132,8 @@ h1, h2, h3, h4, h5, h6, p, a, .text-inner-span { white-space: pre; }
 	transform: translateY(0%);
 }
 
+.pages-container-no-transform { transform: none !important; }
+
 [data-scroll-container]
 {
 	min-height: 100vh;

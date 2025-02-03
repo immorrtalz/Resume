@@ -297,6 +297,74 @@
 .project-item-showcase > svg:hover { opacity: 1; transform: scale(1.25); }
 .project-item-showcase > svg:active { opacity: 0.5; transform: scale(0.75); }
 
+.dialog
+{
+	position: fixed;
+	inset: 0;
+	background: color-mix(in srgb, var(--clr-dark) 25%, transparent);
+	backdrop-filter: blur(calc(var(--blur-bg) * 0.25));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 11;
+	opacity: 0;
+}
+
+.dialog > .dialog-container
+{
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	background: var(--clr-dark);
+	padding: 20px 10px;
+	border-radius: var(--second-border-radius);
+}
+
+.dialog p
+{
+	width: fit-content;
+	height: fit-content;
+	max-width: 90%;
+	text-wrap: wrap;
+	text-align: center;
+}
+
+.dialog .dialog-buttons
+{
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.dialog .button
+{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.dialog > svg
+{
+	position: fixed;
+	top: 5vw;
+	right: 5vw;
+	pointer-events: all;
+	opacity: 0.75;
+	transition: all 0.2s, transform 0.75s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.dialog > svg:hover { opacity: 1; transform: scale(1.25); }
+.dialog > svg:active { opacity: 0.5; transform: scale(0.75); }
+
 .experience-items
 {
 	width: fit-content;
