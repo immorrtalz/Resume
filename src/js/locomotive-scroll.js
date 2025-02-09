@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () =>
 
 				badPerformanceDialog.style.pointerEvents = 'all';
 				badPerformanceDialog.style.opacity = 1;
+				badPerformanceDialog.querySelector('svg').style.pointerEvents = 'all';
 
 				badPerformanceDialogContainer.style.pointerEvents = 'all';
 				for (var i = 0; i < badPerformanceDialogButtons.length; i++) badPerformanceDialogButtons[i].style.pointerEvents = 'all';
@@ -70,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () =>
 				{
 					badPerformanceDialog.style.pointerEvents = '';
 					badPerformanceDialog.style.opacity = '';
+					badPerformanceDialog.querySelector('svg').style.pointerEvents = '';
 					badPerformanceDialogContainer.style.pointerEvents = '';
 					for (var i = 0; i < badPerformanceDialogButtons.length; i++) badPerformanceDialogButtons[i].style.pointerEvents = '';
 				}

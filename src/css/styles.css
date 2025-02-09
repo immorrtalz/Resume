@@ -357,7 +357,7 @@
 	position: fixed;
 	top: 5vw;
 	right: 5vw;
-	pointer-events: all;
+	pointer-events: none;
 	opacity: 0.75;
 	transition: all 0.2s, transform 0.75s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
