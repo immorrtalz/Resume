@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () =>
 		if (fps < 45 && !badPerformanceDialogShown) // bad perormance detected
 		{
 			badPerformanceAlerts++;
+			setTimeout(() => badPerformanceAlerts--, 4000);
 
 			if (badPerformanceAlerts > 10)
 			{
