@@ -1,0 +1,67 @@
+.profiles-card
+{
+	width: 400px;
+	transition: all 0.2s, transform 1.5s cubic-bezier(0.1, 1, 0.3, 1);
+	will-change: transform;
+}
+
+.profiles-card .horizontal-item-image
+{
+	filter: brightness(0.85) saturate(0.5);
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.profiles-card-image-blur
+{
+	position: absolute;
+	width: 50px;
+	height: 100%;
+	border-radius: var(--main-border-radius);
+	object-fit: contain;
+	filter: blur(20px) !important;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+	opacity: 0;
+}
+
+p.profiles-card-image-blur { height: 50px; }
+
+.profiles-card:hover
+{
+	transform: scale(1.1);
+	background: rgba(255, 255, 255, 0.15);
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	transition: all 0.2s, transform 0.75s cubic-bezier(0.1, 1, 0.3, 1);
+	will-change: transform;
+}
+
+.profiles-card:active
+{
+	transform: scale(0.9);
+	background: rgba(255, 255, 255, 0.03);
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.2s, transform 2s cubic-bezier(0.1, 1, 0.3, 1);
+	will-change: transform;
+}
+
+.profiles-card:hover .horizontal-item-image { filter: brightness(1) saturate(1); }
+.profiles-card:hover .profiles-card-image-blur { opacity: 0.5; }
+
+.profiles-card:active .horizontal-item-image
+{
+	opacity: 0.5;
+	filter: brightness(0.85) saturate(0.5);
+}
+
+.profiles-card:active .profiles-card-image-blur
+{
+	opacity: 0.25;
+	filter: brightness(0.85) saturate(0.5);
+}
+
+.profiles-card:active .horizontal-item-text-container { opacity: 0.35; }
+
+.pages-container .page-content-container:last-of-type { padding-bottom: 150px !important; }
