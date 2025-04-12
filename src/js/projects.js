@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () =>
 	for (let i = 0; i < projectItemsObjects.length; i++)
 	{
 		projectItemsContainer.innerHTML +=
-			`<div class="project-item" data-noise-on-hover data-noise-on-hover-opacity="0.4">
+			`<div class="project-item" data-noise-on-hover data-noise-on-hover-opacity="0.5">
 				<div class="noise-on-hover"></div>
 				<img class="project-item-image" src="./src/images/projects-thumbnails/${projectItemsObjects[i].imageFileName}.jpg">
 				<div class="project-item-content-container">
