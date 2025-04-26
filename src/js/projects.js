@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () =>
 			'studbit-test-work-2-stage'
 		),
 		new ProjectItem(
-			'University festival «Light up hearts»',
+			'Student festival «Light up hearts»',
 			'Posts for social networks [mediacenter]',
 			'studbit-zs-2024'
 		),
@@ -40,6 +40,21 @@ document.addEventListener('DOMContentLoaded', () =>
 			'Velcro & spiral curlers',
 			'Products cards for marketplaces',
 			'velcro-spiral-curlers'
+		),
+		new ProjectItem(
+			'Branding for an SMS service',
+			'Landing page and avatar',
+			'proof-sms'
+		),
+		new ProjectItem(
+			"Gram Des' topic on a forum",
+			'Forum banner',
+			'gram-des'
+		),
+		new ProjectItem(
+			"Studying as a Maslenitsa fun",
+			'Post for social networks [mediacenter]',
+			'studbit-study-maslenitsa-mar2025'
 		),
 		new ProjectItem(
 			'Seasonal graphics for OTP service',
