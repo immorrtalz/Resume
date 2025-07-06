@@ -34,21 +34,25 @@ document.addEventListener('DOMContentLoaded', () =>
 
 	addEventListener("scroll", (e) =>
 	{
-		if (heroSectionElement.getBoundingClientRect().bottom < 0 && contactsSectionElement.getBoundingClientRect().top > window.innerHeight && !isMobile && !isTablet)
-			navbar.classList.add('navbar-with-button');
-		else navbar.classList.remove('navbar-with-button');
-
-		var navbarLinkCurrentIndex = 0;
-
-		for (var i = 1; i < navbarLinksSections.length; i++) if (navbarLinksSections[i].getBoundingClientRect().top < window.innerHeight * 0.5) navbarLinkCurrentIndex++;
-
-		navbarLinks.forEach((link, i) =>
+		if (navbarLinks !== undefined && navbarLinks !== null && navbar !== undefined && navbar !== null)
 		{
-			if (i === navbarLinkCurrentIndex) link.classList.add('navbar-link-current');
-			else link.classList.remove('navbar-link-current');
-		});
+			if (heroSectionElement.getBoundingClientRect().bottom < 0 && contactsSectionElement.getBoundingClientRect().top > window.innerHeight && !isMobile && !isTablet)
+				navbar.classList.add('navbar-with-button');
+			else navbar.classList.remove('navbar-with-button');
 
-		for (var i = 0; i < whyItemStackInnerContainers.length; i++)
-			whyItemStackInnerContainers[i].style.transform = `rotateZ(10deg) translateY(${whyItemStackInnerContainers[0].parentElement.getBoundingClientRect().top * 0.05 * (i % 2 == 0 ? 1 : -1)}%)`;
+			var navbarLinkCurrentIndex = 0;
+
+			for (var i = 1; i < navbarLinksSections.length; i++) if (navbarLinksSections[i].getBoundingClientRect().top < window.innerHeight * 0.5) navbarLinkCurrentIndex++;
+
+			navbarLinks.forEach((link, i) =>
+			{
+				if (i === navbarLinkCurrentIndex) link.classList.add('navbar-link-current');
+				else link.classList.remove('navbar-link-current');
+			});
+		}
+
+		if (whyItemStackInnerContainers !== undefined && whyItemStackInnerContainers !== null)
+			for (var i = 0; i < whyItemStackInnerContainers.length; i++)
+				whyItemStackInnerContainers[i].style.transform = `rotateZ(10deg) translateY(${whyItemStackInnerContainers[0].parentElement.getBoundingClientRect().top * 0.05 * (i % 2 == 0 ? 1 : -1)}%)`;
 	});
 });
