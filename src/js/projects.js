@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () =>
 			'harmoonic'
 		),
 		new ProjectItem(
+			"Luna's topic on a forum",
+			'Forum banner',
+			'luna-reverse-engineering'
+		),
+		new ProjectItem(
 			"Refunder's topic on a forum",
 			'Forum banner',
 			'trusted-refund'
@@ -47,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () =>
 			'proof-sms'
 		),
 		new ProjectItem(
-			"Gram Des' topic on a forum",
+			"Elvira's topic on a forum",
 			'Forum banner',
-			'gram-des'
+			'elvira'
 		),
 		new ProjectItem(
 			"Studying as a Maslenitsa fun",

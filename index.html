@@ -14,7 +14,7 @@
 
 <body>
 
-	<div class="navbar">
+	<navbar>
 
 		<a class="font-regular navbar-link navbar-link-current">
 			<span class="text-inner-span">Home</span>
@@ -40,62 +40,37 @@
 			<svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.65601 7C1.10372 7 0.656006 7.44772 0.656006 8C0.656006 8.55228 1.10372 9 1.65601 9V7ZM21.6731 8.70711C22.0636 8.31658 22.0636 7.68342 21.6731 7.29289L15.3092 0.928932C14.9186 0.538408 14.2855 0.538408 13.8949 0.928932C13.5044 1.31946 13.5044 1.95262 13.8949 2.34315L19.5518 8L13.8949 13.6569C13.5044 14.0474 13.5044 14.6805 13.8949 15.0711C14.2855 15.4616 14.9186 15.4616 15.3092 15.0711L21.6731 8.70711ZM1.65601 9H20.966V7H1.65601V9Z"/></svg>
 		</a>
 
-	</div>
-
-	<div class="gradient-blur-top">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
+	</navbar>
 
 	<div class="project-item-showcase">
-		<img src="" draggable="false">
+		<img loading="lazy" src="" draggable="false">
 		<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg>
 	</div>
 
-	<div class="dialog" id="badPerformanceDialog">
-		<div class="dialog-container">
-			<p class="font-regular">Bad perormance? Would you like to disable smooth scroll to improve your FPS?</p>
-			<div class="dialog-buttons">
-				<button class="button font-medium" data-noise-on-hover data-noise-on-hover-opacity="0.5">
-					<div class="noise-on-hover"></div>
-					<span class="text-inner-span">Yes</span>
-				</button>
-				<button class="button font-medium" data-noise-on-hover data-noise-on-hover-opacity="0.5">
-					<div class="noise-on-hover"></div>
-					<span class="text-inner-span">No</span>
-				</button>
-			</div>
-		</div>
-		<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 -960 960 960" fill="#FFFFFF"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg>
-	</div>
+	<span class="sections-container">
 
-	<span class="pages-container" data-scroll data-scroll-container data-scroll-id="scroll-container">
+		<section id="hero">
 
-		<div class="page-content-container" id="hero" data-scroll data-scroll-call="hero-in-view">
-
-			<p class="hero-tip font-regular element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">
+			<p class="hero-tip font-regular element-not-in-scroll">
 				<img src="./src/images/avatar.jpg">
 				<span class="text-inner-span">Hi, I am @immorrtalz 👋</span>
 			</p>
 
-			<h1 class="hero-title font-semibold text-gradient element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">
+			<h1 class="hero-title font-semibold text-gradient element-not-in-scroll">
 				A graphic
 				<span class="text-inner-span text-handwritten">designer</span>
 				<br>& developer
 			</h1>
 
-			<a href="https://t.me/immorrtalz" target="_blank" class="button font-medium element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" data-noise-on-hover data-noise-on-hover-opacity="0.5">
+			<a href="https://t.me/immorrtalz" target="_blank" class="button font-medium element-not-in-scroll" data-noise-on-hover data-noise-on-hover-opacity="0.5">
 				<div class="noise-on-hover"></div>
 				<svg viewBox="0 0 128 106" xmlns="http://www.w3.org/2000/svg"><path d="M8.76399 45.7169C43.1167 30.805 65.9857 20.8964 77.4693 16.0892C110.153 2.45263 117.024 0.098105 121.441 0C122.422 0 124.582 0.196211 126.054 1.37347C127.232 2.35452 127.526 3.62989 127.722 4.61094C127.919 5.59199 128.115 7.65219 127.919 9.22187C126.152 27.8618 118.496 73.0882 114.57 93.8865C112.902 102.716 109.663 105.659 106.522 105.953C99.6513 106.542 94.4494 101.441 87.8733 97.1239C77.4693 90.3547 71.6785 86.1362 61.569 79.465C49.889 71.8129 57.4466 67.5944 64.1209 60.727C65.8876 58.9611 96.0198 31.4917 96.6087 29.0391C96.7068 28.7448 96.7068 27.5675 96.0198 26.9789C95.3327 26.3902 94.3512 26.5865 93.566 26.7827C92.4864 26.9789 75.9971 37.9666 43.9019 59.6478C39.1906 62.8853 34.9702 64.455 31.1423 64.3569C26.9218 64.2588 18.8735 62.0024 12.7882 60.0403C5.42688 57.6857 -0.462154 56.4104 0.0285982 52.29C0.32305 50.1317 3.26756 47.9733 8.76399 45.7169Z"/></svg>
 				<span class="text-inner-span">Get in touch</span>
 				<svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.65601 7C1.10372 7 0.656006 7.44772 0.656006 8C0.656006 8.55228 1.10372 9 1.65601 9V7ZM21.6731 8.70711C22.0636 8.31658 22.0636 7.68342 21.6731 7.29289L15.3092 0.928932C14.9186 0.538408 14.2855 0.538408 13.8949 0.928932C13.5044 1.31946 13.5044 1.95262 13.8949 2.34315L19.5518 8L13.8949 13.6569C13.5044 14.0474 13.5044 14.6805 13.8949 15.0711C14.2855 15.4616 14.9186 15.4616 15.3092 15.0711L21.6731 8.70711ZM1.65601 9H20.966V7H1.65601V9Z"/></svg>
 			</a>
 
-			<div class="hero-scroll-hint element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">
-				<p class="font-regular">SCROLL</p>
+			<div class="hero-scroll-hint">
+				<p class="font-regular element-not-in-scroll">SCROLL</p>
 				<span class="hero-scroll-hint-glow-lines">
 					<div class="hero-scroll-hint-glow-line"></div>
 					<div class="hero-scroll-hint-glow-line"></div>
@@ -103,33 +78,33 @@
 				</span>
 			</div>
 
-		</div>
+		</section>
 
-		<div class="page-content-container" id="projects">
+		<section id="projects">
 
 			<div class="content-header">
-				<img class="content-header-image element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" src="./src/images/emojis/emoji_fire.gif">
-				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Some of my</p>
-				<h3 class="content-header-second-text font-semibold text-almostwhite element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Projects</h3>
+				<img class="content-header-image element-not-in-scroll" src="./src/images/emojis/emoji_fire.gif">
+				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll">Some of my</p>
+				<h3 class="content-header-second-text font-semibold text-almostwhite element-not-in-scroll">Projects</h3>
 			</div>
 
-			<div class="project-items element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll"></div>
+			<div class="project-items element-not-in-scroll"></div>
 
-		</div>
+		</section>
 
-		<div class="page-content-container" id="experience">
+		<section id="experience">
 
 			<div class="content-header">
-				<img class="content-header-image element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" src="./src/images/emojis/emoji_stars.gif">
-				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Career</p>
-				<h3 class="content-header-second-text font-semibold text-almostwhite element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Experience <span class="text-inner-span text-semitransparent">&</span> education</h3>
+				<img class="content-header-image element-not-in-scroll" src="./src/images/emojis/emoji_stars.gif">
+				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll">Career</p>
+				<h3 class="content-header-second-text font-semibold text-almostwhite element-not-in-scroll">Experience <span class="text-inner-span text-semitransparent">&</span> education</h3>
 			</div>
 
 			<div class="experience-items">
 
-				<div class="horizontal-item element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" data-noise-on-hover>
+				<div class="horizontal-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
-					<img class="horizontal-item-image" src="./src/images/experience-images/telegram.jpg">
+					<img loading="lazy" class="horizontal-item-image" src="./src/images/experience-images/telegram.jpg">
 					<div class="horizontal-item-content-container">
 						<div class="horizontal-item-text-container">
 							<h5 class="text-header-in-item text-almostwhite font-semibold">Freelance on multiple platforms</h5>
@@ -139,9 +114,9 @@
 					</div>
 				</div>
 
-				<div class="horizontal-item element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" data-noise-on-hover>
+				<div class="horizontal-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
-					<img class="horizontal-item-image" src="./src/images/experience-images/uust.jpg">
+					<img loading="lazy" class="horizontal-item-image" src="./src/images/experience-images/uust.jpg">
 					<div class="horizontal-item-content-container">
 						<div class="horizontal-item-text-container">
 							<h5 class="text-header-in-item text-almostwhite font-semibold">Ufa University of Science & Technology</h5>
@@ -151,9 +126,9 @@
 					</div>
 				</div>
 
-				<div class="horizontal-item element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" data-noise-on-hover>
+				<div class="horizontal-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
-					<img class="horizontal-item-image" src="./src/images/experience-images/studbit.jpg">
+					<img loading="lazy" class="horizontal-item-image" src="./src/images/experience-images/studbit.jpg">
 					<div class="horizontal-item-content-container">
 						<div class="horizontal-item-text-container">
 							<h5 class="text-header-in-item text-almostwhite font-semibold">STUDBIT (Media Center of University)</h5>
@@ -163,9 +138,9 @@
 					</div>
 				</div>
 
-				<div class="horizontal-item element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" data-noise-on-hover>
+				<div class="horizontal-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
-					<img class="horizontal-item-image" src="./src/images/experience-images/evermedia-project.jpg">
+					<img loading="lazy" class="horizontal-item-image" src="./src/images/experience-images/evermedia-project.jpg">
 					<div class="horizontal-item-content-container">
 						<div class="horizontal-item-text-container">
 							<h5 class="text-header-in-item text-almostwhite font-semibold">EVERMEDIA PROJECT (own brand & projects)</h5>
@@ -177,53 +152,53 @@
 
 			</div>
 
-		</div>
+		</section>
 
-		<div class="page-content-container" id="stats">
+		<section id="stats">
 
-			<div class="stats-items element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">
+			<div class="stats-items">
 
 				<div class="stats-item">
-					<h3 class="text-header-in-item font-semibold"><span class="text-inner-span text-almostwhite">3</span><span class="text-inner-span text-semitransparent">+</span></h3>
-					<p class="text-subtext-in-item font-normal text-semitransparent">years of experience</p>
+					<h3 class="text-header-in-item font-semibold element-not-in-scroll"><span class="text-inner-span text-almostwhite">3</span><span class="text-inner-span text-semitransparent">+</span></h3>
+					<p class="text-subtext-in-item font-normal text-semitransparent element-not-in-scroll">years of experience</p>
 				</div>
 
 				<div class="stats-separator"></div>
 
 				<div class="stats-item">
-					<h3 class="text-header-in-item font-semibold"><span class="text-inner-span text-almostwhite">88</span><span class="text-inner-span text-semitransparent">+</span></h3>
-					<p class="text-subtext-in-item font-normal text-semitransparent">happy customers</p>
+					<h3 class="text-header-in-item font-semibold element-not-in-scroll"><span class="text-inner-span text-almostwhite">88</span><span class="text-inner-span text-semitransparent">+</span></h3>
+					<p class="text-subtext-in-item font-normal text-semitransparent element-not-in-scroll">happy customers</p>
 				</div>
 
 				<div class="stats-separator"></div>
 
 				<div class="stats-item">
-					<h3 class="text-header-in-item font-semibold"><span class="text-inner-span text-semitransparent">$</span><span class="text-inner-span text-almostwhite">10</span></h3>
-					<p class="text-subtext-in-item font-normal text-semitransparent">average bill for design</p>
+					<h3 class="text-header-in-item font-semibold element-not-in-scroll"><span class="text-inner-span text-semitransparent">$</span><span class="text-inner-span text-almostwhite">10</span></h3>
+					<p class="text-subtext-in-item font-normal text-semitransparent element-not-in-scroll">average bill for design</p>
 				</div>
 
 				<div class="stats-separator"></div>
 
 				<div class="stats-item">
-					<h3 class="text-header-in-item font-semibold"><span class="text-inner-span text-almostwhite">60</span><span class="text-inner-span text-semitransparent">%</span></h3>
-					<p class="text-subtext-in-item font-normal text-semitransparent">of customers return</p>
+					<h3 class="text-header-in-item font-semibold element-not-in-scroll"><span class="text-inner-span text-almostwhite">60</span><span class="text-inner-span text-semitransparent">%</span></h3>
+					<p class="text-subtext-in-item font-normal text-semitransparent element-not-in-scroll">of customers return</p>
 				</div>
 
 			</div>
 
-		</div>
+		</section>
 
-		<div class="page-content-container" id="why" data-scroll data-scroll-id="why">
+		<section id="why">
 
 			<div class="content-header">
-				<img class="content-header-image element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" src="./src/images/emojis/emoji_volt.gif">
-				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">CLEAR YOUR DOUBTS</p>
-				<h3 class="content-header-second-text font-semibold text-almostwhite element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Why <span class="text-inner-span text-semitransparent">me?</span></h3>
+				<img class="content-header-image element-not-in-scroll" src="./src/images/emojis/emoji_volt.gif">
+				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll">CLEAR YOUR DOUBTS</p>
+				<h3 class="content-header-second-text font-semibold text-almostwhite element-not-in-scroll">Why <span class="text-inner-span text-semitransparent">me?</span></h3>
 			</div>
 
-			<div class="why-items element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">
+			<div class="why-items">
 
-				<div class="why-item" data-noise-on-hover>
+				<div class="why-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
 					<div class="why-item-content-container">
 						<div class="why-item-text-container">
@@ -232,10 +207,10 @@
 and still provide affordable services</p>
 						</div>
 					</div>
-					<img class="why-item-image" src="./src/images/emojis/emoji_burning-heart.gif">
+					<img loading="lazy" class="why-item-image" src="./src/images/emojis/emoji_burning-heart.gif">
 				</div>
 
-				<div class="why-item" data-noise-on-hover>
+				<div class="why-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
 					<div class="why-item-content-container">
 						<div class="why-item-text-container">
@@ -244,10 +219,10 @@ and still provide affordable services</p>
 with the product</p>
 						</div>
 					</div>
-					<img class="why-item-image" src="./src/images/emojis/emoji_star.gif">
+					<img loading="lazy" class="why-item-image" src="./src/images/emojis/emoji_star.gif">
 				</div>
 
-				<div class="why-item" data-noise-on-hover>
+				<div class="why-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
 					<div class="why-item-content-container">
 						<div class="why-item-text-container">
@@ -256,10 +231,10 @@ with the product</p>
 if you ask me to do so</p>
 						</div>
 					</div>
-					<img class="why-item-image" src="./src/images/emojis/emoji_lock-with-key.gif">
+					<img loading="lazy" class="why-item-image" src="./src/images/emojis/emoji_lock-with-key.gif">
 				</div>
 
-				<div class="why-item" data-noise-on-hover>
+				<div class="why-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
 					<div class="why-item-content-container">
 						<div class="why-item-text-container">
@@ -268,10 +243,10 @@ if you ask me to do so</p>
 and higher priority in the order queue</p>
 						</div>
 					</div>
-					<img class="why-item-image" src="./src/images/emojis/emoji_hug.gif">
+					<img loading="lazy" class="why-item-image" src="./src/images/emojis/emoji_hug.gif">
 				</div>
 
-				<div class="why-item" data-noise-on-hover>
+				<div class="why-item element-not-in-scroll" data-noise-on-hover>
 					<div class="noise-on-hover"></div>
 					<div class="why-item-content-container">
 						<div class="why-item-text-container">
@@ -283,121 +258,121 @@ and function fantastically</p>
 
 					<div class="why-item-stack-container">
 						<div class="why-item-stack-inner-container">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/css.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/github.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/css.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/github.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/css.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/github.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/css.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/github.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/css.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/github.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/css.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/github.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/css.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/github.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/sai2.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/css.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/github.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/tauri.png">
 						</div>
 						<div class="why-item-stack-inner-container">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/js.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/js.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/js.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/js.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/js.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/js.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/js.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/js.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/chrome.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/figma.png">
 						</div>
 						<div class="why-item-stack-inner-container">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/python.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/html.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/python.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/html.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/python.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/html.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/python.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/html.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/python.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/html.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/python.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/html.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/python.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/html.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vite.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/csharp.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/python.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/html.png">
 						</div>
 						<div class="why-item-stack-inner-container">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/nodejs.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/telegram.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/spotify.png">
 						</div>
 						<div class="why-item-stack-inner-container">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
-							<img class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/c++.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/vscode.png">
+							<img loading="lazy" class="why-item-stack-image" src="./src/images/tech-stack/ts.png">
 						</div>
 					</div>
 				</div>
 
 			</div>
 
-		</div>
+		</section>
 
-		<div class="page-content-container" id="contacts">
+		<section id="contacts">
 
 			<div class="content-header">
-				<img class="content-header-image element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" src="./src/images/emojis/emoji_rocket.gif">
-				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Project on mind?</p>
+				<img class="content-header-image element-not-in-scroll" src="./src/images/emojis/emoji_rocket.gif">
+				<p class="content-header-first-text text-semitransparent font-regular element-not-in-scroll">Project on mind?</p>
 			</div>
 
 			<div class="contacts-container">
-				<h3 class="contacts-header font-semibold text-gradient element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Let’s discuss it!</h3>
-				<p class="text-semitransparent font-regular element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">Feel free to ask if you have any questions</p>
+				<h3 class="contacts-header font-semibold text-gradient element-not-in-scroll">Let’s discuss it!</h3>
+				<p class="text-semitransparent font-regular element-not-in-scroll">Feel free to ask if you have any questions</p>
 
-				<a href="https://t.me/immorrtalz" target="_blank" class="button font-medium element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll" data-noise-on-hover data-noise-on-hover-opacity="0.5">
+				<a href="https://t.me/immorrtalz" target="_blank" class="button font-medium element-not-in-scroll" data-noise-on-hover data-noise-on-hover-opacity="0.5">
 					<div class="noise-on-hover"></div>
 					<svg viewBox="0 0 128 106" xmlns="http://www.w3.org/2000/svg"><path d="M8.76399 45.7169C43.1167 30.805 65.9857 20.8964 77.4693 16.0892C110.153 2.45263 117.024 0.098105 121.441 0C122.422 0 124.582 0.196211 126.054 1.37347C127.232 2.35452 127.526 3.62989 127.722 4.61094C127.919 5.59199 128.115 7.65219 127.919 9.22187C126.152 27.8618 118.496 73.0882 114.57 93.8865C112.902 102.716 109.663 105.659 106.522 105.953C99.6513 106.542 94.4494 101.441 87.8733 97.1239C77.4693 90.3547 71.6785 86.1362 61.569 79.465C49.889 71.8129 57.4466 67.5944 64.1209 60.727C65.8876 58.9611 96.0198 31.4917 96.6087 29.0391C96.7068 28.7448 96.7068 27.5675 96.0198 26.9789C95.3327 26.3902 94.3512 26.5865 93.566 26.7827C92.4864 26.9789 75.9971 37.9666 43.9019 59.6478C39.1906 62.8853 34.9702 64.455 31.1423 64.3569C26.9218 64.2588 18.8735 62.0024 12.7882 60.0403C5.42688 57.6857 -0.462154 56.4104 0.0285982 52.29C0.32305 50.1317 3.26756 47.9733 8.76399 45.7169Z"/></svg>
 					<span class="text-inner-span">Get in touch</span>
 					<svg viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg"><path d="M1.65601 7C1.10372 7 0.656006 7.44772 0.656006 8C0.656006 8.55228 1.10372 9 1.65601 9V7ZM21.6731 8.70711C22.0636 8.31658 22.0636 7.68342 21.6731 7.29289L15.3092 0.928932C14.9186 0.538408 14.2855 0.538408 13.8949 0.928932C13.5044 1.31946 13.5044 1.95262 13.8949 2.34315L19.5518 8L13.8949 13.6569C13.5044 14.0474 13.5044 14.6805 13.8949 15.0711C14.2855 15.4616 14.9186 15.4616 15.3092 15.0711L21.6731 8.70711ZM1.65601 9H20.966V7H1.65601V9Z"/></svg>
 				</a>
 
-				<p class="text-semitransparent font-regular element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">or send an email: <a class="text-inner-span text-inner-link" href="mailto:evereststudioproject@bk.ru">evereststudioproject@bk.ru</a></p>
+				<p class="text-semitransparent font-regular element-not-in-scroll">or send an email: <a class="text-inner-span text-inner-link" href="mailto:evereststudioproject@bk.ru">evereststudioproject@bk.ru</a></p>
 			</div>
 
-		</div>
+		</section>
 
-		<div class="page-content-container" id="footer">
+		<section id="footer">
 
-			<div class="footer-container element-not-in-scroll" data-scroll data-scroll-class="element-in-scroll">
-				<p class="text-semitransparent font-regular replace-to-current-year">© [/current-year/], immorrtalz</p>
-				<p class="text-semitransparent font-regular">Made with 💜</p>
+			<div class="footer-container">
+				<p class="text-semitransparent font-regular replace-to-current-year element-not-in-scroll">© [/current-year/], immorrtalz</p>
+				<p class="text-semitransparent font-regular element-not-in-scroll">Made with 💜</p>
 			</div>
 
-		</div>
+		</section>
 
 	</span>
 
@@ -408,14 +383,8 @@ and function fantastically</p>
 
 </body>
 
-<script
-	src="https://code.jquery.com/jquery-3.6.0.js"
-	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-	crossorigin="anonymous">
-</script>
-
 <script src="./src/js/projects.js"></script>
 <script src="./src/js/noise-on-hover.js"></script>
-<script src="./src/js/locomotive-scroll.js"></script>
+<script src="./src/js/scroll.js"></script>
 
 </html>
