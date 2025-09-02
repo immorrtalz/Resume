@@ -7,16 +7,16 @@ document.addEventListener('DOMContentLoaded', () =>
 
 	projectItemsObjects.push(
 		new ProjectItem(
-			'Harmoonic – my music player app',
+			'Harmoonic – music player app',
 			'UI/UX    JS/TS    React    Android (coming soon)',
 			'harmoonic',
 			'https://github.com/immorrtalz/Harmoonic'
 		),
 		new ProjectItem(
-			'Mephryl – my image converter web app',
+			'Mephryl – image converter web app',
 			'UI/UX    TS    React',
 			'mephryl',
-			'https://evermedia.immorrtalz.com/mephryl'
+			'https://evermedia.immorrtalz.com/Mephryl'
 		),
 		new ProjectItem(
 			'TriRun – my first mobile game',
@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', () =>
 			'trusted-refund'
 		),
 		new ProjectItem(
-			'My application to the mediacenter',
-			'Post for social networks [mediacenter]',
-			'studbit-test-work-2-stage'
+			"Branding for a staking platform",
+			'Landing page and logo',
+			'aurora-stake'
 		),
 		new ProjectItem(
 			'Student festival «Light up hearts»',
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () =>
 		),
 		new ProjectItem(
 			'Branding for an SMS service',
-			'Landing page and avatar',
+			'Landing page and logo',
 			'proof-sms'
 		),
 		new ProjectItem(
