@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () =>
 			'Mephryl – image converter web app',
 			'UI/UX    TS    React',
 			'mephryl',
-			'https://evermedia.immorrtalz.com/Mephryl'
+			'https://evermedia.immorrtalz.com/mephryl'
 		),
 		new ProjectItem(
 			'TriRun – my first mobile game',
